@@ -1,11 +1,11 @@
 ---
-title: "\"Iron Man\" - Elixir day 1: New datatype in Elixir"
+title: "\"Iron Man\" - Elixir day 1: New datatypes in Elixir"
 date: '2022-05-22'
 tags: ['elixir', 'atom', 'bitstring', 'bits', 'bytes', 'storage']
 draft: false
 summary: 'A new datatype called bitstring used in Elixir to save a contiguous sequence of bits in memory.'
 ---
-
+# Datatypes
 Elixir uses some new datatypes which aren't defined (but can be used) in a different programming languages.
 
 # Atoms
@@ -22,7 +22,7 @@ true
 iex> is_atom(nil)
 true
 ```
-Aliases which start with an upper case are also atoms:
+Aliases which start with an upper case are also atoms. I still don't understand the reason how is it used, but I hope that I'll solve it soon.
 ```elixir
 iex> is_atom(Test)
 true
