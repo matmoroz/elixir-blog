@@ -17,18 +17,24 @@ true
 Because `=` is right-associative at the begining the expression `1 + 3` is calculated and then matched to the `b` variable.
 
 # Variables in patterns
-Patterns are very often using tuples which synatax are `{}`. Tuples are different than lists `[]`, not only becasue of the syntax signs, but the way of saving it in memory which makes an influence on the usage of them. The difference between them will be explained in the further posts. For example a function `:calendar.local_time/0` is returning a tuple `{date, time}`. What can be done, if we'd like to get only one value of this tuple, for example `time`? Take in mind that tuples doesn't have an index. With a lists it can be a little bit easier, to use `Enum.at()/2` function to get a value with a specified index, like below, but it would still require some libraries and other functions to be used. Is it necessary?
+Patterns are very often using tuples which synatax are `{}`. Tuples are different than lists `[]`, not only becasue of the syntax signs, but the way of saving it in memory which makes an influence on the usage of them. The difference between them will be explained in the further posts. For example a function `:calendar.local_time/0` is returning a tuple `{date, time}`. What can be done, if we'd like to get only one value of this tuple, for example `time`? Of course it would be fine to use an `elem/2` function to get a value from a tuple with a defined index, like it's described below.
 ```elixir
-iex()> a = Tuple.to_list(:calendar.local_time())
-[{2022, 5, 23}, {23, 36, 17}]
-iex()> Enum.at(a,1)        
+iex()> a = :calendar.local_time()
+{{2022, 5, 23}, {23, 36, 17}}
+iex()> elem(a,1)
 {23, 36, 17}
 ```
-It still requires two steps and with tuples it would be necessary to convert it to the list at the beginning. The way to solve it, to use it more efficient is to use a matching pattern.
+Of course it could be achieved in a one command, but I've shown it in two steps for a better understanding. It still requires to get two values from a function. The function I've used is just an example, but what if a first value in a tuple would return an error? The way to solve it, which would be more efficient is to use a matching pattern.
 ```elixir
 iex()> {_, time} = :calendar.local_time()
 {2022, 5, 23}, {23, 36, 17}
 iex()> time
 {23, 36, 17}
 ```
-The first value used in a matching pattern is an **anonymous variable**. It doesn't matter what exactly this function will return there - matching pattern doesn't care. It's a really good option, to use a function which returns some values, but we would like to see only one of them.
+The first value used in a matching pattern is an **anonymous variable**. It doesn't matter what exactly this function will return there - matching pattern doesn't care. It's a really good option, to use a function which returns some values, but we would like to see only one of them.  It's also possible to match a variable to a value which is a tuple in a tuple. Let's say we'd like to return only a current hour of the day.
+```elixir
+iex()> {_, {hour, _, _}} = :calendar.local_time()
+{2022, 5, 23}, {23, 36, 17}
+iex()> hour
+23
+```
