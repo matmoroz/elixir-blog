@@ -3,7 +3,7 @@ title: "\"Iron Man\" - Elixir day 4: Definition of a function Elixir - ampersand
 date: '2022-05-25'
 tags: ['elixir','function', 'ampersand']
 draft: false
-summary: 'Further usage of an anonymus variable and a pin operator'
+summary: 'Function definition and a meaning of an ampersand character'
 ---
 Last day I've used a function `Enum.sort/2` which could be used with one or two arguments. I've used `:asc` and `:desc` but there also can be used a function which was declared using an **ampersand** character.
 ```elixir
