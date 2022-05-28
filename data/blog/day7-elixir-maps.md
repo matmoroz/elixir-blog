@@ -1,5 +1,5 @@
 ---
-title: "\"Iron Man\" - Elixir day 6: Tuple {} and a map %{} difference" 
+title: "\"Iron Man\" - Elixir day 7: Tuple {} and a map %{} difference" 
 date: '2022-05-28'
 tags: ['elixir','map', 'difference', 'tuple', '%']
 draft: false
