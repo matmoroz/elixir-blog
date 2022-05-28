@@ -1,9 +1,9 @@
 ---
-title: "\"Iron Man\" - Elixir day 7: Tuple {} and a map %{} difference" 
+title: "\"Iron Man\" - Elixir day 7: Tuple and a map difference" 
 date: '2022-05-28'
-tags: ['elixir','map', 'difference', 'tuple', '%']
+tags: ['elixir','map', 'difference', 'tuple']
 draft: false
-summary: 'Difference between a tuple {} and a map %{} '
+summary: 'Difference between a tuple and a map'
 ---
 # Map
 Maps can also use braces `{` `}` a characters which are at the beggining of the values inside, but the first character is a percent `%`. The structure of an example map is described below.

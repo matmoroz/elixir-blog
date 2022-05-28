@@ -1,7 +1,7 @@
 ---
-title: "\"Iron Man\" - Elixir day 6: Tuple {} usage" 
+title: "\"Iron Man\" - Elixir day 6: Tuple usage" 
 date: '2022-05-27'
-tags: ['elixir','tuple', 'index', '{}']
+tags: ['elixir','tuple', 'index']
 draft: false
 summary: 'Explanation of a tuple usage, definition and functions'
 ---
