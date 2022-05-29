@@ -1,6 +1,6 @@
 ---
-title: "\"Iron Man\" - Elixir day 7: Immutability - Tuples"
-date: '2022-05-28'
+title: "\"Iron Man\" - Elixir day 8: Immutability - Tuples"
+date: '2022-05-29'
 tags: ['elixir', 'immutability', 'tuple', modification]
 draft: false
 summary: 'Description why data in elixir is immutable - tuples'
