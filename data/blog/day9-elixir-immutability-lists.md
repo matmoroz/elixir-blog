@@ -1,7 +1,7 @@
 ---
-title: "\"Iron Man\" - Elixir day 8: Immutability - Lists"
-date: '2022-05-29'
-tags: ['elixir', 'immutability', 'list', modification]
+title: "\"Iron Man\" - Elixir day 9: Immutability - Lists"
+date: '2022-05-30'
+tags: ['elixir', 'immutability', 'list', 'modification']
 draft: false
 summary: 'Description why data in elixir is immutable - lists'
 ---
