@@ -1,9 +1,9 @@
 ---
-title: "\"Iron Man\" - Elixir day 11: && and || - Operators"
+title: "\"Iron Man\" - Elixir day 11: AND and OR - Operators"
 date: '2022-06-01'
 tags: ['elixir', 'operator', 'and', `or`]
 draft: false
-summary: '&& and || operators description'
+summary: 'AND and OR operators description'
 ---
 # && and || operators
 I think that the logic is quite easy, when we use a binary values, so just `1` and `0`, but it's necessary to take in mind that operators in elixir are cooperating with atoms, where there are only `false` and `nil` which are treated as **falsy** but the others, so also `0` value are treated as **truthy**. The main two logical operators are **AND** `&&` and **OR** `||`. When there are so many values to be used, which value will be returned when both values are truthy, or both values are falsy? Let's check **AND** operator.
