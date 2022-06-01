@@ -1,7 +1,7 @@
 ---
 title: "\"Iron Man\" - Elixir day 11: AND and OR - Operators"
 date: '2022-06-01'
-tags: ['elixir', 'operator', 'and', `or`]
+tags: ['elixir', 'operator', 'and', 'or']
 draft: false
 summary: 'AND and OR operators description'
 ---
