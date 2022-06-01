@@ -1,7 +1,7 @@
 ---
 title: "\"Iron Man\" - Elixir day 10: Equality Operators"
 date: '2022-05-31'
-tags: ['elixir', 'operator', 'equality', `strong`, `weak`]
+tags: ['elixir', 'operator', 'equality', 'strong']
 draft: false
 summary: 'Difference between strong and weak equality operator'
 ---
